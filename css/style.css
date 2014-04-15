@@ -12,4 +12,7 @@
 .highlight {
 	margin-bottom: 20px;
 	font-size: 0.9em;
+	background-color: #EEE;
+	border-left: 3px solid #DDD;
+	padding: 10px;
 }
