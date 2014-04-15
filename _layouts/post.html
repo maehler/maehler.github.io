@@ -1,0 +1,16 @@
+{% include header.html %}
+
+<div class="row">
+	<div class="large-9 columns">
+		<h2>{{ page.title }}</h2>
+
+		<time>{{ page.date | date_to_string }}</time>
+		{{ content }}
+
+		{% for tag in page.tags offset: 0 %}
+			<span class="tag">{{ tag }}</span>
+		{% endfor %}
+	</div>
+</div>
+
+{% include footer.html %}
