@@ -17,7 +17,8 @@ author:
 ---
 <p>Oh, that's right, I have a blog. Had almost forgotten about it.</p>
 <p>I just faced the problem of setting multiple authors in a LaTeX document together with their affiliations. On top of that, one of the authors had multiple affiliations. Google returned <a href="http://tex.stackexchange.com/a/9598/12574" title="Adding more than one author with different affiliation">this excellent answer</a> on <a href="http://tex.stackexchange.com" title="TeX">TeX StackExchange</a>. In short; use the <code>authblk</code> package:</p>
-<pre class="brush: text; gutter: false; first-line: 1; highlight: []; html-script: false">
+
+{% highlight latex %}
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -33,5 +34,6 @@ author:
 \begin{document}
   \maketitle
 \end{document}
-</pre>
+{% endhighlight %}
+
 <p><code>\thanks</code> is useful to add footnotes to the authors, in this case their email addresses.</p>
