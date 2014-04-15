@@ -31,7 +31,7 @@ element tree and deleting elements as you go, you will only consume small
 amounts of memory. The following snippet is more or less taken from 
 [the documentation][3].
 
-```python
+{% highlight python %}
 import xml.etree.cElementTree as ET
 
 # Get an iterable tree
@@ -49,7 +49,7 @@ for event, elem in context:
         # Now the whole element is available! Process it here.
         # When done with it, call
         root.clear() # to free up some memory
-```
+{% endhighlight %}
 
 I don't like the way I had to specify the namespaces, but I guess there's a 
 better way of doing it. When running this on a 6.4 GB XML file (161 million 
