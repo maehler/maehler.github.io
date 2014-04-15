@@ -1,0 +1,37 @@
+---
+layout: post
+title: Authors and affiliations in LaTeX
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: niklas.mahler@gmail.com
+  display_name: Niklas
+  first_name: Niklas
+  last_name: Mähler
+---
+<p>Oh, that's right, I have a blog. Had almost forgotten about it.</p>
+<p>I just faced the problem of setting multiple authors in a LaTeX document together with their affiliations. On top of that, one of the authors had multiple affiliations. Google returned <a href="http://tex.stackexchange.com/a/9598/12574" title="Adding more than one author with different affiliation">this excellent answer</a> on <a href="http://tex.stackexchange.com" title="TeX">TeX StackExchange</a>. In short; use the <code>authblk</code> package:</p>
+<pre class="brush: text; gutter: false; first-line: 1; highlight: []; html-script: false">
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{authblk}
+
+\title{More than one Author with different Affiliations}
+\author[1]{Author A\thanks{A.A@university.edu}}
+\author[2]{Author D\thanks{D.D@university.edu}}
+\author[1,2]{Author E\thanks{E.E@university.edu}}
+\affil[1]{Department of Computer Science, \LaTeX\ University}
+\affil[2]{Department of Mechanical Engineering, \LaTeX\ University}
+
+\begin{document}
+  \maketitle
+\end{document}
+</pre>
+<p><code>\thanks</code> is useful to add footnotes to the authors, in this case their email addresses.</p>
