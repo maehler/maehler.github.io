@@ -24,6 +24,7 @@ it. However, I had never parsed XML with it before. Because of the size of the
 files, it was unfeasible to load the entire file into memory, and for me that 
 was not necessary either.
 
+
 After Googling for a while, I found that many people recommend the 
 [ElementTree][1] module and it's C-equivalent cElementTree. The function 
 [`iterparse`][2] proved to be a real life saver. By iterating through the 
