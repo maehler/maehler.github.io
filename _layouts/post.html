@@ -4,7 +4,7 @@
 	<div class="large-9 columns">
 		<h2>{{ page.title }}</h2>
 
-		<time>{{ page.date | date_to_string }}</time>
+		<time>{{ page.date | date: '%F' }}</time>
 		{{ content }}
 
 		{% for tag in page.tags offset: 0 %}
