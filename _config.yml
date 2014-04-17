@@ -1,4 +1,4 @@
-title: maehler.github.io
+title: maehler
 exclude: [Gemfile, Gemfile.lock, Rakefile]
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
