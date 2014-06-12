@@ -7,8 +7,8 @@ title: maehler
 	<article>
 		<h3><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h3>
 		<time>{{ post.date | date: '%F' }}</time>
-		{{ post.excerpt }}
-		<p><a href="{{ site.prefix }}{{ post.url }}">Read more...</a></p>
+		{{ post.content }}
+		<p><a href="{{ site.prefix }}{{ post.url }}">Comment...</a></p>
 		{% for tag in post.tags offset: 0 %}
 			<!-- <span class="tag">{{ tag }}</span> -->
 		{% endfor %}
