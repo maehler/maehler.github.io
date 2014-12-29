@@ -1,4 +1,7 @@
 title: maehler
+name: maehler
+description: Bioinformatics, R and other nonsense
+url: http://maehler.se
 exclude: [Gemfile, Gemfile.lock, Rakefile]
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
