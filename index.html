@@ -3,15 +3,39 @@ layout: default
 title: maehler.se
 ---
 
-<h1>Hello</h1>
+<div class="row">
+	<div class="columns small-12">
+		<img src="img/mendeley_wordcloud_horizontal.png" alt="Wordcloud of my Mendeley library">
+	</div>
+</div>
 
 <div class="row">
-	<div class="columns large-6 panel">
+	<div class="columns small-12">
+		<p>
+			I am a PhD student in Bioinformatics in the <a href="http://www.nmbu.no/om/fakulteter/vetbio/institutter/ikbm/forskning/forskningsgrupper/node/9446">
+			Biostatistics group</a> at the <a href="http://www.nmbu.no">
+			Norwegian University of Life Sciences</a>. I am currently working on
+			a project trying to figure out the connection between gene expression
+			and phenotype variation in natural populations of European aspen
+			(<i>Populus tremula</i>). I got a master degree in engineering
+			biotechnology from <a href="http://www.umu.se">Umeå University</a>,
+			Sweden in 2012 and went to Norway for my PhD studies in the fall of
+			2012.
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns small-6">
 		<h5>Latest blog posts</h5>
 		<ul>
 			{% for post in site.posts limit: 5%}
-			<li><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></li>		
+			<li><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</ul>
+	</div>
+	<div class="columns small-6">
+		<a class="twitter-timeline" href="https://twitter.com/nmaehler" data-widget-id="547468750644338688">Tweets by @nmaehler</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 </div>
