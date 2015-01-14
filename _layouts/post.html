@@ -1,18 +1,29 @@
 {% include header.html %}
 
-<div class="row">
-	<div class="large-9 columns">
+<div class="row blog-post">
+	<div class="medium-9 columns">
 		<h2>{{ page.title }}</h2>
 
-		<time>{{ page.date | date: '%F' }}</time>
 		{{ content }}
 
-		{% for tag in page.tags offset: 0 %}
-			<!-- <span class="tag">{{ tag }}</span> -->
-		{% endfor %}
-	</div>
+		<div class="row post-date">
+			<div class="columns medium-12">
+				<p class="small">Posted on <time>{{ page.date | date: '%F' }}</time></p>
+			</div>
+		</div>
 
-	<div class="large-9 columns" id="disqus_thread"></div>
+		<div class="row">
+			<div class="columns medium-12 tags">
+				{% for tag in page.tags offset: 0 %}
+				<span class="tag label secondary">{{ tag }}</span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-9 columns" id="disqus_thread"></div>
 	    <script type="text/javascript">
 	        var disqus_shortname = 'maehler';
 

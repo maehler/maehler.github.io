@@ -1,7 +1,8 @@
 /* top-bar modifications */
 .top-bar {
-	background-color: #FFF;
-	border-bottom: solid 1px #CCC;
+  background-color: #FFF;
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 30px;
 }
 .top-bar .name h1 {
 	line-height: 44px; font-size: 1.2rem }
@@ -54,8 +55,17 @@
 .top-bar.expanded .title-area { background-color: white; }
 .top-bar.expanded .top-bar-section li:not(.has-form) a:not(.button) { border-bottom: none; }
 
-.row .row, .top-bar { margin-bottom: 30px; }
+.row .row { margin-bottom: 30px; }
 .row .row:last-child { margin-bottom: 0; }
+
+/* Blog posts */
+  .blog-post .tags {
+    margin-bottom: 15px; }
+  .blog-post .post-date {
+    margin-bottom: 0; }
+      .blog-post .post-date p {
+        font-size: 0.875rem;
+      }
 
 .highlight {
 	margin-bottom: 20px;
