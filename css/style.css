@@ -67,13 +67,31 @@
         font-size: 0.875rem;
       }
 
+code {
+  color: #333;
+  background-color: #EEE;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 3px; }
+    code:before, code:after {
+      letter-spacing: -0.2em;
+      content: "\00a0";
+    }
+
 .highlight {
 	margin-bottom: 20px;
 	font-size: 0.9em;
 	background-color: #EEE;
 	border-left: 3px solid #DDD;
-	padding: 10px;
-}
+	padding: 10px; }
+    .highlight code {
+      background-color: transparent; }
+        .highlight code:before, .highlight code:after {
+          content: "";
+        }
 
 .youtube {
 	border: none;
