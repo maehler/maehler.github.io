@@ -1,49 +1,42 @@
 ---
 layout: default
-title: maehler
+title: maehler.se
 ---
 
-{% for post in paginator.posts %}
-	<article>
-		<h3><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h3>
-		<time>{{ post.date | date: '%F' }}</time>
-		{{ post.content }}
-		<p><a href="{{ site.prefix }}{{ post.url }}">Comment...</a></p>
-		{% for tag in post.tags offset: 0 %}
-			<!-- <span class="tag">{{ tag }}</span> -->
-		{% endfor %}
-		{% unless forloop.last %}
-		<hr>
-		{% endunless %}
-	</article>
-{% endfor %}
-
-{% if paginator.total_pages > 1 %}
-<div class="pagination-centered">
-	<ul class="pagination">
-	{% if paginator.previous_page %}
-		<li class="arrow">
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html' '' }}">&laquo;</a>
-		</li>
-	{% else %}
-		<li class="arrow unavailable"><a>&laquo;</a></li>
-	{% endif %}
-
-	{% for page in (1..paginator.total_pages) %}
-		{% if page == paginator.page %}
-			<li class="current"><a>{{ page }}</a></li>
-		{% elsif page == 1 %}
-			<li><a href="{{ site.baseurl }}">{{ page }}</a></li>
-		{% else %}
-			<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-		{% endif %}
-	{% endfor %}
-
-	{% if paginator.next_page %}
-		<li class="arrow"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
-	{% else %}
-		<li class="arrow unavailable"><a>&raquo;</a></li>
-	{% endif %}
-	</ul>
+<div class="row">
+	<div class="columns small-12">
+		<img src="/img/mendeley_wordcloud_horizontal_1440x646.png" alt="Wordcloud of my Mendeley library">
+	</div>
 </div>
-{% endif %}
+
+<div class="row">
+	<div class="columns small-12">
+		<p>
+			My name is Niklas Mähler, and I am a PhD student in Bioinformatics
+			in the <a href="http://www.nmbu.no/om/fakulteter/vetbio/institutter/ikbm/forskning/forskningsgrupper/node/9446">
+			Biostatistics group</a> at the <a href="http://www.nmbu.no">
+			Norwegian University of Life Sciences</a>. I am currently working on
+			a project trying to figure out the connection between gene expression
+			and phenotype variation in natural populations of European aspen
+			(<i>Populus tremula</i>). I got a master degree in engineering
+			biotechnology from <a href="http://www.umu.se">Umeå University</a>,
+			Sweden in 2012 and went to Norway for my PhD studies in the fall of
+			2012.
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns small-6">
+		<h5>Latest blog posts</h5>
+		<ul>
+			{% for post in site.posts limit: 5%}
+			<li><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="columns small-6">
+		<a class="twitter-timeline" href="https://twitter.com/nmaehler" data-widget-id="547468750644338688">Tweets by @nmaehler</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>

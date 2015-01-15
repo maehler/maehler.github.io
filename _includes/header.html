@@ -3,22 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{ page.title }}</title>
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/foundation.css">
-	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/foundation-icons.css">
 	<link rel="stylesheet" href="/css/github.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<header class="row">
-		<div class="large-12 columns">
-			<div class="nav-bar right">
-				<ul class="button-group">
-					<li><a href="/" class="button">Home</a></li>
-					<li><a href="/about/" class="button">About</a></li>
+	<div class="row">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="/">{{ site.title }}</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class="divider"></li>
+					<li><a href="/">Home</a></li>
+					<li class="divider"></li>
+					<li><a href="/blog/">Blog</a></li>
+					<li class="divider"></li>
 				</ul>
-			</div>
-			<a href="/"><h1>{{ site.title }}</h1></a>
-		</div>
-		<hr>
-	</header>
+			</section>
+		</nav>
+	</div>

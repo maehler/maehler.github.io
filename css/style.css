@@ -1,13 +1,71 @@
-.size-12 { font-size: 12px; }
-.size-14 { font-size: 14px; }
-.size-16 { font-size: 16px; }
-.size-18 { font-size: 18px; }
-.size-21 { font-size: 21px; }
-.size-24 { font-size: 24px; }
-.size-36 { font-size: 36px; }
-.size-48 { font-size: 48px; }
-.size-60 { font-size: 60px; }
-.size-72 { font-size: 72px; }
+/* top-bar modifications */
+.top-bar {
+  background-color: #FFF;
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+.top-bar .name h1 {
+	line-height: 44px; font-size: 1.2rem }
+		.top-bar .name h1 a {
+			color: inherit; }
+.top-bar .toggle-topbar {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .top-bar .toggle-topbar a {
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      font-weight: bold;
+      position: relative;
+      display: block;
+      padding: 0 15px;
+      height: 45px;
+      line-height: 45px; }
+    .top-bar .toggle-topbar.menu-icon {
+      right: 15px;
+      top: 50%;
+      margin-top: -16px;
+      padding-left: 40px; }
+      .top-bar .toggle-topbar.menu-icon a {
+        height: 34px;
+        line-height: 33px;
+        padding: 0;
+        padding-right: 25px;
+        color: black;
+        position: relative; }
+        .top-bar .toggle-topbar.menu-icon a::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          display: block;
+          width: 16px;
+          top: 0;
+          height: 0;
+          -webkit-box-shadow: 1px 10px 1px 1px black, 1px 16px 1px 1px black, 1px 22px 1px 1px black;
+          box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black; }
+.top-bar-section ul { background-color: #FFF; }
+.top-bar-section ul li > a { color: #000; }
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #FFF;
+	border-bottom: solid 1px #CCC;
+	height: 45px;
+}
+.top-bar-section > ul > .divider { border-right: solid 1px #CCC; }
+.top-bar.expanded .title-area { background-color: white; }
+.top-bar.expanded .top-bar-section li:not(.has-form) a:not(.button) { border-bottom: none; }
+
+.row .row { margin-bottom: 30px; }
+.row .row:last-child { margin-bottom: 0; }
+
+/* Blog posts */
+  .blog-post .tags {
+    margin-bottom: 5px; }
+  .blog-post .post-date {
+    margin-bottom: 0; }
+      .blog-post .post-date p {
+        font-size: 0.875rem;
+      }
 
 .highlight {
 	margin-bottom: 20px;
