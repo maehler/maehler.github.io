@@ -11,7 +11,8 @@ I've saved in my Mendeley library. Here I will now describe how I made this.
 First of all, you need to localize the Mendeley SQLite database. I use a Mac,
 so I can find it in
 `$HOME/Library/Application\ Support/Mendeley\ Desktop/<email>@www.mendeley.com.sqlite`.
-Just replace `<email>` with the email address you use for Mendeley.
+Just replace `<email>` with the email address you use for Mendeley. If you can't
+find the database, take a look at [this Mendeley support page](http://support.mendeley.com/customer/portal/articles/227951-how-do-i-locate-mendeley-desktop-database-files-on-my-computer-).
 In R, we'll then extract the relevant columns from the database.
 
 {% highlight R %}
