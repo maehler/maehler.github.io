@@ -67,6 +67,9 @@
         font-size: 0.875rem;
       }
 
+a code { color: #008cba; }
+a:hover code, a:focus code { color: #0078a0; }
+
 code {
   color: #333;
   background-color: #EEE;
