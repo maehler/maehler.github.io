@@ -1,6 +1,7 @@
 title: maehler
 name: maehler
 description: Bioinformatics, R and other nonsense
+author: Niklas Mähler
 url: http://maehler.se
 exclude: [Gemfile, Gemfile.lock, Rakefile]
 markdown: kramdown
