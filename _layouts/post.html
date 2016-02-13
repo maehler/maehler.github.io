@@ -2,23 +2,18 @@
 
 <div class="row blog-post">
 	<div class="medium-9 columns">
-		<h2>{{ page.title }}</h2>
-
+		<header>
+			<h2>{{ page.title }}</h2>
+			<div class="row secondary">
+				<div class="medium-6 columns">
+					<span><time class="small">{{ page.date | date: "%F" }}</time></span>
+				</div>
+				<div class="medium-6 columns medium-text-right large-text-right">
+					<span>By {{ site.author }}</span>
+				</div>
+			</div>
+		</header>
 		{{ content }}
-
-		<div class="row post-date">
-			<div class="columns medium-12">
-				<p class="small">Posted on <time>{{ page.date | date: '%F' }}</time></p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="columns medium-12 tags">
-				{% for tag in page.tags offset: 0 %}
-				<span class="tag label secondary">{{ tag }}</span>
-				{% endfor %}
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -35,7 +30,7 @@
 	        })();
 	    </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>   
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 
 {% include footer.html %}
