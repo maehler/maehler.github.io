@@ -3,9 +3,11 @@ name: maehler
 description: Bioinformatics, R and other nonsense
 author: Niklas Mähler
 url: http://maehler.se
+repository: maehler/maehler.github.io
 exclude: [Gemfile, Gemfile.lock, Rakefile]
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: /blog/page:num
+gems: [jekyll-paginate]
 excerpt_separator: ""
