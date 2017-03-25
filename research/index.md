@@ -9,7 +9,7 @@ Currently I am mainly interested in global patterns of gene expression regulatio
 
 ## Preprints
 
-- **Niklas Mähler**, Barbara K Terebieniec, Jing Wang, Pär K Ingvarsson, Nathaniel R Street, Torgeir R Hvidsten. [Purifying selection provides buffering of the natural variation co-expression network in a forest tree species][aspen-eqtl]. bioRxiv 078188. 2016
+- **Niklas Mähler**, Jing Wang, Barbara K Terebieniec, Pär K Ingvarsson, Nathaniel R Street, Torgeir R Hvidsten. [Gene co-expression network connectivity is an important determinant of selective constraint][aspen-eqtl]. bioRxiv 078188. 2016
 
 ## Peer reviewed papers
 
