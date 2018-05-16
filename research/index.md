@@ -9,6 +9,7 @@ Currently I am mainly interested in global patterns of gene expression regulatio
 
 ## Peer reviewed papers
 
+- Åsa Grimberg, Ida Lager, Nathaniel R Street, Kathryn M Robinson, Salla Marttila, **Niklas Mähler**, Pär K Ingvarsson, Rishikesh P Bhalerao. [Storage lipid accumulation is controlled by photoperiodic signal acting via regulators of growth cessation and dormancy in hybrid aspen][lipids]. New Phytologist. 2018
 - Szymon Tylewicz, Anna Petterle, Salla Marttila, Pal Miskolczi, Abdul Azeez, Rajesh K Singh, Juha Immanen, **Niklas Mähler**, Torgeir R Hvidsten, D Magnus Eklund, John L Bowman, Ykä Helariutta, Rishikesh P Bhalerao. [Photoperiodic control of seasonal growth is mediated by ABA acting on cell-cell communication][aba]. Science. 2018
 - Ogonna Obudulu, **Niklas Mähler**, Tomas Skotare, Joakim Bygdell, Ilka N Abreu, Maria Ahnlund, Madhavi Latha Gandla, Anna Petterle, Thomas Moritz, Torgeir R Hvidsten, Leif J Jönsson, Gunnar Wingsle, Johan Trygg, Hannele Tuominen. [A multi-omics approach reveals function of Secretory Carrier-Associated Membrane Proteins in wood formation of *Populus* trees][bioimprove-scamp]. BMC Genomics. 2018;19:11
 - **Niklas Mähler**, Jing Wang, Barbara K Terebieniec, Pär K Ingvarsson, Nathaniel R Street, Torgeir R Hvidsten. [Gene co-expression network connectivity is an important determinant of selective constraint][aspen-eqtl]. PLOS Genetics. 2017;13(4): e1006402
@@ -20,6 +21,7 @@ Currently I am mainly interested in global patterns of gene expression regulatio
 
 - **Niklas Mähler**, Jing Wang, Barbara K Terebieniec, Pär K Ingvarsson, Nathaniel R Street, Torgeir R Hvidsten. [Gene co-expression network connectivity is an important determinant of selective constraint][aspen-eqtl-preprint]. bioRxiv 078188. 2016
 
+[lipids]: <https://doi.org/10.1111/nph.15197>
 [aba]: <https://doi.org/10.1126/science.aan8576>
 [bioimprove-scamp]: <https://doi.org/10.1186/s12864-017-4411-1>
 [aspen-eqtl]: <https://doi.org/10.1371/journal.pgen.1006402>
